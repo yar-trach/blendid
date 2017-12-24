@@ -1,7 +1,7 @@
 import $ from 'jquery';
 window.jQuery = $;
 
-import bootstrap from 'bootstrap';
+// import bootstrap from 'bootstrap';
 
 import 'bootstrap/js/dist/util';
 import 'bootstrap/js/dist/alert';
