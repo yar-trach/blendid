@@ -10,7 +10,7 @@ const productionTask = function(cb) {
   global.production = true
 
   // Build to a temporary directory, then move compiled files as a last step
-  PATH_CONFIG.finalDest = PATH_CONFIG.dest
+  PATH_CONFIG.finalDest = PATH_CONFIG.assets
   PATH_CONFIG.dest = PATH_CONFIG.temp
       ? path.join(process.env.PWD, PATH_CONFIG.temp)
       : path.join(os.tmpdir(), 'gulp-starter')
