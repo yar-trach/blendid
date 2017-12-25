@@ -57,7 +57,10 @@ module.exports = function (env) {
     resolve: {
       extensions: extensions,
       alias: TASK_CONFIG.javascripts.alias,
-      modules: [jsSrc, path.resolve(process.env.PWD, 'node_modules')],
+      modules: [
+        jsSrc, 
+        path.resolve(process.env.PWD, 'node_modules')
+      ],
     },
     module: {
       rules: [ TASK_CONFIG.javascripts.babelLoader ]
