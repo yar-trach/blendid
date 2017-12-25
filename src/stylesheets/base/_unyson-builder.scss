@@ -1,0 +1,40 @@
+.fw-container-fluid {
+    @extend .container-fluid;
+}
+.fw-container {
+    @extend .container;
+}
+.fw-row {
+    @extend .row;
+}
+// 	'1_5' => array(
+// 		'title'          => '1/5',
+// 		'backend_class'  => 'fw-col-sm-15',
+// 		'frontend_class' => 'fw-col-xs-12 fw-col-sm-15',
+// 	),
+
+.fw-col-xs-12 {
+    @extend .col-12;
+}
+.fw-col-sm-3 {
+    @extend .col-sm-3;
+}
+.fw-col-sm-4 {
+    @extend .col-sm-4;
+}
+.fw-col-sm-6 {
+    @extend .col-sm-6;
+}
+.fw-col-sm-8 {
+    @extend .col-sm-8;
+}
+.fw-col-sm-9 {
+    @extend .col-sm-9;
+}
+.fw-col-sm-12 {
+    @extend .col-sm-12;
+}
+.fw-col-sm-15 {
+    @extend .col;
+    @include make-col(1, 5);
+}
