@@ -26,4 +26,9 @@
             transform: translateY(-50%);
         }
     }
+
+    .btn {
+        min-width: 14rem;
+        @extend .mx-2;
+    }
 }

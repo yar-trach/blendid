@@ -1,4 +1,12 @@
 .btn {
+    font-size: 0.875rem;
+
+    &-outline-primary {
+        span {
+            color: white;
+        }
+    }
+
     &.rounded-sides {
         border-radius: 1.5rem;
     }
