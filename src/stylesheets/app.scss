@@ -43,8 +43,12 @@
 // @import "bootstrap/scss/carousel";
 @import "bootstrap/scss/utilities";
  
-
+// Base elements
 @import "base/typography";
 @import "base/unyson-builder";
 
+// Layout elements
 @import "layout-elements/section";
+
+// Content elements
+@import "content-elements/divider";

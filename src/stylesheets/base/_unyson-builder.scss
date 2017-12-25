@@ -7,12 +7,6 @@
 .fw-row {
     @extend .row;
 }
-// 	'1_5' => array(
-// 		'title'          => '1/5',
-// 		'backend_class'  => 'fw-col-sm-15',
-// 		'frontend_class' => 'fw-col-xs-12 fw-col-sm-15',
-// 	),
-
 .fw-col-xs-12 {
     @extend .col-12;
 }
