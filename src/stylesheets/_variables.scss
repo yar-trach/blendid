@@ -62,7 +62,7 @@ $colors: map-merge((
   "gray-dark":  $gray-800
 ), $colors);
 
-$primary:       $blue !default;
+$primary:       #45cfcf;
 $secondary:     $gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
@@ -93,7 +93,7 @@ $theme-color-interval:      8% !default;
 // Quickly modify global styling by enabling or disabling optional features.
 
 $enable-caret:              true !default;
-$enable-rounded:            true !default;
+$enable-rounded:            false;
 $enable-shadows:            false !default;
 $enable-gradients:          false !default;
 $enable-transitions:        true !default;
