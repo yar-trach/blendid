@@ -1,0 +1,8 @@
+.promo-spot {
+    @extend .my-3;
+
+    .card-title,
+    .btn {
+        text-transform: uppercase;
+    }
+}
