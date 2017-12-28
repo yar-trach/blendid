@@ -63,7 +63,7 @@ $colors: map-merge((
 ), $colors);
 
 $primary:       #45cfcf;
-$secondary:     $gray-600 !default;
+$secondary:     #132952;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
@@ -92,7 +92,7 @@ $theme-color-interval:      8% !default;
 //
 // Quickly modify global styling by enabling or disabling optional features.
 
-$enable-caret:              true !default;
+$enable-caret:              false;
 $enable-rounded:            false;
 $enable-shadows:            false !default;
 $enable-gradients:          false !default;
@@ -482,9 +482,9 @@ $form-feedback-invalid-color:       theme-color("danger") !default;
 $dropdown-min-width:                10rem !default;
 $dropdown-padding-y:                .5rem !default;
 $dropdown-spacer:                   .125rem !default;
-$dropdown-bg:                       $white !default;
+$dropdown-bg:                       rgba($primary, .7);
 $dropdown-border-color:             rgba($black,.15) !default;
-$dropdown-border-width:             $border-width !default;
+$dropdown-border-width:             0;
 $dropdown-divider-bg:               $gray-200 !default;
 $dropdown-box-shadow:               0 .5rem 1rem rgba($black,.175) !default;
 
@@ -550,9 +550,9 @@ $navbar-toggler-padding-x:          .75rem !default;
 $navbar-toggler-font-size:          $font-size-lg !default;
 $navbar-toggler-border-radius:      $btn-border-radius !default;
 
-$navbar-dark-color:                 rgba($white,.5) !default;
+$navbar-dark-color:                 $white;
 $navbar-dark-hover-color:           rgba($white,.75) !default;
-$navbar-dark-active-color:          $white !default;
+$navbar-dark-active-color:          $primary;
 $navbar-dark-disabled-color:        rgba($white,.25) !default;
 $navbar-dark-toggler-icon-bg:       str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{$navbar-dark-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"), "#", "%23") !default;
 $navbar-dark-toggler-border-color:  rgba($white,.1) !default;
