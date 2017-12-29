@@ -1,0 +1,25 @@
+.ai1ec {
+    &-month-view {
+        .ai1ec-day {
+            .ai1ec-date {
+                text-align: center;
+
+                .ai1ec-load-view {
+                    font-weight: 700 !important;
+                    color: #1d3c73;
+                }
+            }
+        }
+    }
+}
+.ai1ec-month-view td.ai1ec-empty {
+    background: $white !important;
+}
+.ai1ec-filters .ai1ec-color-swatch {
+    height: 22px;
+    width: 22px;
+    opacity: 1;
+    top: 5px;
+    position: relative;
+    border-radius: 50%;
+}
