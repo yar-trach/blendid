@@ -1,0 +1,25 @@
+.blog-spot {
+    &.card {
+        min-width: 15rem;
+
+        .card {
+            &-footer {
+                .read-more {
+                    font-size: 0.813rem;
+                    text-transform: uppercase;
+                    text-decoration: underline;
+                }
+                .in-share-button {
+                    color: #0077b5;
+    
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+                .fb-share-button {
+                    top: -4px;
+                }
+            }
+        }
+    }
+}

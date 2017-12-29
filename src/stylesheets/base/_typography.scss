@@ -1,0 +1,11 @@
+// Font awesome sizes
+
+$fa-size-count: 6;
+
+@for $i from 1 through $fa-size-count {
+    $size: $i * 1rem;
+
+    .fa-#{$i} {
+        font-size: $size !important;
+    }
+}
