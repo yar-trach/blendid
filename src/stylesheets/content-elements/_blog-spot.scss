@@ -2,7 +2,26 @@
     &.card {
         min-width: 15rem;
 
+        .blog-author {
+            color: #898989;
+
+            &:after {
+                content: ':';
+            }
+        }
+
         .card {
+            &-title {
+                &:before {
+                    content: '«';
+                }
+                &:after {
+                    content: '»';
+                }
+            }
+            &-text {
+                color: #898989;
+            }
             &-footer {
                 .read-more {
                     font-size: 0.813rem;
