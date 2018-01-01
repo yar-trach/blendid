@@ -52,6 +52,7 @@ module.exports = function (env) {
         Scrollspy: "exports-loader?Scrollspy!bootstrap/js/dist/scrollspy",
         Tab: "exports-loader?Tab!bootstrap/js/dist/tab",
         Tooltip: "exports-loader?Tooltip!bootstrap/js/dist/tooltip",
+        Swiper: "exports-loader?Swiper!swiper/dist/js/swiper",
       })
     ],
     resolve: {

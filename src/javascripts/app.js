@@ -13,10 +13,12 @@ import 'bootstrap/js/dist/dropdown';
 // import 'bootstrap/js/dist/tab';
 // import 'bootstrap/js/dist/tooltip';
 
+import 'swiper/dist/js/swiper';
+
 import './modules'
 
 console.log(`app.js has loaded!`)
 
 jQuery( document ).ready(function() {
-    console.log( "jQuery ready!" );
+    console.log( "DOM is ready!" );
 });
