@@ -1,5 +1,9 @@
 <!-- Slider main container -->
-<div class="swiper-container" data-module="swiper-element">
+<div 
+    class="swiper-container" 
+    data-module="swiper-element"
+    data-loop="{{ parameters.loop }}">
+
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
         <!-- Slides -->
@@ -27,17 +31,23 @@
             <img src="//localhost:8080/wp-content/uploads/2017/12/auth.png" class="img-fluid">
         </div>
     </div>
-    <!-- If we need pagination -->
-    <div class="swiper-pagination"></div>
- 
-    <!-- If we need navigation buttons -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
- 
-    <!-- If we need scrollbar -->
-    <div class="swiper-scrollbar"></div>
-</div>
 
+    {% if parameters.pagination %}
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+    {% endif %}
+ 
+    {% if parameters.navigation %}
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    {% endif %}
+ 
+    {% if parameters.scrollbar %}
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+    {% endif %}
+</div>
 
 <!-- <section class="fw-main-row position-relative ">
     <div class="fw-container">

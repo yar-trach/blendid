@@ -9,6 +9,22 @@
 {% block content %}
 
   {% include "partials/section.html" %}
+
+  {% set parameters = {
+    'loop': 1,
+    'navigation': 1,
+    'pagination': 1,
+    'scrollbar': 1
+  } %}
+  {% include "partials/carousel.html" %}
+
+
+  {% set parameters = {
+    'loop': 0,
+    'navigation': 0,
+    'pagination': 0,
+    'scrollbar': 0
+  } %}
   {% include "partials/carousel.html" %}
 
   <!-- <h1 data-module="example">{{ message }}</h1> -->
