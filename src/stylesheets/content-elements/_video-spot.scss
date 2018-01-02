@@ -1,0 +1,24 @@
+.video-spot {
+    &.card {
+
+        .video-author {
+            color: #898989;
+            font-weight: 700;
+
+            &:after {
+                content: ':';
+            }
+        }
+
+        .card {
+            &-title {
+                &:before {
+                    content: '«';
+                }
+                &:after {
+                    content: '»';
+                }
+            }
+        }
+    }
+}
