@@ -6,24 +6,24 @@ export default class SwiperElement {
 
         this.swiper = new Swiper(el, {
             // Default parameters
-            slidesPerView: 4,
-            spaceBetween: 0,
+            slidesPerView: Number(el.dataset.slides),
+            spaceBetween: Number(el.dataset.space),
+            loop: Number(el.dataset.loop),
             // Responsive breakpoints
             breakpoints: {
                 // when window width is <= 375
                 375: {
-                    slidesPerView: 1,
+                    slidesPerView: slidesNum(Number(el.dataset.slides) - 3),
                 },
                 // when window width is <= 640
                 640: {
-                    slidesPerView: 2,
+                    slidesPerView: slidesNum(Number(el.dataset.slides) - 2),
                 },
                 // when window width is <= 1024
                 1024: {
-                    slidesPerView: 3,
+                    slidesPerView: slidesNum(Number(el.dataset.slides) - 1),
                 }
             },
-            loop: el.dataset.loop === '1',
 
             // If we need pagination
             pagination: {
@@ -41,5 +41,9 @@ export default class SwiperElement {
                 el: el.getElementsByClassName('swiper-scrollbar')[0],
             },
         });
+
+        function slidesNum(num) {
+            return num >= 1 ? num : 1;
+        }
     }
 }
