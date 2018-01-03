@@ -1,0 +1,44 @@
+.event-spot {
+    .card {
+        &-body {
+            position: relative;
+
+            .event {
+                &-time {
+                    color: #040000;
+                    opacity: .66;
+                }
+
+                &-type {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    padding-top: .175rem;
+                    padding-bottom: .175rem;
+                    padding-right: .5rem;
+                    padding-left: 1.5rem;
+                    min-width: 5rem;
+                    overflow-x: hidden;
+    
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        background-color: rgba($black, .17);
+                        height: 100%;
+                        left: .5rem;
+                        top: 0;
+                        right: -25%;
+                        transform: skewX(30deg);
+                    }
+                }
+            }
+        }
+
+        &-text {
+            // TODO: remove this after filtering the_excerpt()
+            .ai1ec-excerpt {
+                display: none;
+            }
+        }
+    }
+}
