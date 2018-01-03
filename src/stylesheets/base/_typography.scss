@@ -9,3 +9,9 @@ $fa-size-count: 6;
         font-size: $size !important;
     }
 }
+
+p {
+    a {
+        text-decoration: underline;
+    }
+}

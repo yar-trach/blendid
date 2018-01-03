@@ -1,0 +1,18 @@
+.site-footer {
+    p,
+    address {
+        color: #8a8c95;
+    }
+
+    .social-icons {
+        a {
+            background-color: $primary;
+            width: 2rem;
+            height: 2rem;
+
+            i {
+                color: $dark;
+            }
+        }
+    }
+}
