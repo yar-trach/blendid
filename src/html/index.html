@@ -21,17 +21,23 @@
   {% include "partials/carousel.html" %}
 
 
-  {% set parameters = {
-    'loop': 0,
-    'slides': 3,
-    'space': 30,
-    'navigation': 0,
-    'pagination': 0,
-    'scrollbar': 0
-  } %}
-  {% include "partials/carousel.html" %}
+  <div class="fw-container">
+    <div class="fw-row">
+      <div class="col-md-12">
+        {% set parameters = {
+          'loop': 0,
+          'slides': 3,
+          'space': 30,
+          'navigation': 1,
+          'pagination': 0,
+          'scrollbar': 0
+        } %}
+        {% include "partials/carousel.html" %}
+      </div>
+    </div>
+  </div>
 
-  {% include "partials/temp.html" %}
+
   <!-- <h1 data-module="example">{{ message }}</h1> -->
   <br>
   <br>

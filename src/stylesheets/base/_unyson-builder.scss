@@ -1,13 +1,64 @@
 .fw-container-fluid {
     @extend .container-fluid;
 
-    .swiper-container {
+    .swiper-container,
+    .swiper-navigation {
         margin-left: -15px;
         margin-right: -15px;
     }
+
+    .swiper-element {
+        .swiper-navigation {
+            .swiper-button {
+                &-prev,
+                &-next {
+                    top: 0;
+                    height: 100%;
+                    margin-top: 0;
+                    background-color: rgba($black, .77);
+                    opacity: 0;
+                    will-change: opacity;
+                    transition: opacity .25s ease;
+                }
+                &-prev {
+                    left: -15px;
+                }
+                &-next {
+                    right: -15px;
+                }
+            }
+        }
+
+        &:hover {
+            .swiper-navigation {
+                .swiper-button {
+                    &-prev,
+                    &-next {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+
+    
 }
+
 .fw-container {
     @extend .container;
+
+    .swiper-navigation {
+        @include media-breakpoint-up(md) {
+            .swiper-button {
+                &-prev {
+                    left: -2.5rem;
+                }
+                &-next {
+                    right: -2.5rem;
+                }
+            }
+        }
+    }
 }
 .fw-row {
     @extend .row;

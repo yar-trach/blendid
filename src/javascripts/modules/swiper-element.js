@@ -3,25 +3,26 @@ import Swiper from 'swiper/dist/js/swiper';
 export default class SwiperElement {
     constructor(el) {
         this.el = el;
+        var swiperContainer = el.getElementsByClassName('swiper-container')[0];
 
-        this.swiper = new Swiper(el, {
+        this.swiper = new Swiper(swiperContainer, {
             // Default parameters
-            slidesPerView: Number(el.dataset.slides),
-            spaceBetween: Number(el.dataset.space),
-            loop: Number(el.dataset.loop),
+            slidesPerView: Number(swiperContainer.dataset.slides),
+            spaceBetween: Number(swiperContainer.dataset.space),
+            loop: Number(swiperContainer.dataset.loop),
             // Responsive breakpoints
             breakpoints: {
                 // when window width is <= 375
                 375: {
-                    slidesPerView: slidesNum(Number(el.dataset.slides) - 3),
+                    slidesPerView: slidesNum(Number(swiperContainer.dataset.slides) - 3),
                 },
                 // when window width is <= 640
                 640: {
-                    slidesPerView: slidesNum(Number(el.dataset.slides) - 2),
+                    slidesPerView: slidesNum(Number(swiperContainer.dataset.slides) - 2),
                 },
                 // when window width is <= 1024
                 1024: {
-                    slidesPerView: slidesNum(Number(el.dataset.slides) - 1),
+                    slidesPerView: slidesNum(Number(swiperContainer.dataset.slides) - 1),
                 }
             },
 
