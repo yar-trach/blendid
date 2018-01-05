@@ -1,4 +1,10 @@
 .swiper {
+    &-image {
+        padding-bottom: 56.25%;
+        background-size: cover;
+        background-position: center;
+    }
+
     &-navigation {
         @include media-breakpoint-down(md) {
             display: none;
@@ -7,6 +13,16 @@
     &-pagination {
         position: relative;
         bottom: 0 !important;
+
+        &-bullet {
+            background-color: $secondary;
+            @extend .mx-1;
+    
+            &-active {
+                background-color: $secondary;
+                opacity: .8;
+            }
+        }
     }
 
     &-button-prev,
@@ -20,15 +36,6 @@
 
     &-button-next {
         background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2010%2018%22%3E%0A%20%20%3Cpath%20fill%3D%22%230ff%22%20d%3D%22M10%209L.871%2018%200%2017.14%208.257%209%200%20.86.871%200z%22%2F%3E%0A%3C%2Fsvg%3E%0A");
-    }
-
-    &-pagination-bullet {
-        background-color: $secondary;
-
-        &-active {
-            background-color: $secondary;
-            opacity: .8;
-        }
     }
 }
 

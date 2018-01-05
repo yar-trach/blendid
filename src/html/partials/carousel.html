@@ -1,59 +1,66 @@
 <!-- Slider main container -->
 <div 
-    class="swiper-element position-relative"
+    class="swiper-element"
     data-module="swiper-element">
-    
-    <div 
-        class="swiper-container" 
-        data-loop="{{ parameters.loop }}"
-        data-slides="{{ parameters.slides }}"
-        data-space="{{ parameters.space }}">
 
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">
-                <img src="//localhost:8080/wp-content/uploads/2017/12/microphone-270x250.jpg" class="img-fluid">
+    <div class="position-relative">
+        <div 
+            class="swiper-container" 
+            data-loop="{{ parameters.loop }}"
+            data-slides="{{ parameters.slides }}"
+            data-space="{{ parameters.space }}">
+    
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="swiper-image" style="background-image: url(//localhost:8080/wp-content/uploads/2017/12/microphone-270x250.jpg)"></div>
+                    <!-- <img src="//localhost:8080/wp-content/uploads/2017/12/microphone-270x250.jpg" class="img-fluid"> -->
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-image" style="background-image: url(//localhost:8080/wp-content/uploads/2017/12/21551666_2018851195015302_873450756607415253_o.jpg)"></div>
+                    <!-- <img src="//localhost:8080/wp-content/uploads/2017/12/21551666_2018851195015302_873450756607415253_o.jpg" class="img-fluid"> -->
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-image" style="background-image: url(//localhost:8080/wp-content/uploads/2017/12/Group-10.jpg)"></div>
+                    <!-- <img src="//localhost:8080/wp-content/uploads/2017/12/Group-10.jpg" class="img-fluid"> -->
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-image" style="background-image: url(//localhost:8080/wp-content/uploads/2017/12/16807810_1336351026410494_8343046197365125228_n.jpg)"></div>
+                    <!-- <img src="//localhost:8080/wp-content/uploads/2017/12/16807810_1336351026410494_8343046197365125228_n.jpg" class="img-fluid"> -->
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-image" style="background-image: url(//localhost:8080/wp-content/uploads/2017/12/bibikov.jpg)"></div>
+                    <!-- <img src="//localhost:8080/wp-content/uploads/2017/12/bibikov.jpg" class="img-fluid"> -->
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-image" style="background-image: url(//localhost:8080/wp-content/uploads/2017/12/KarpatyPM-2000x500.jpg)"></div>
+                    <!-- <img src="//localhost:8080/wp-content/uploads/2017/12/KarpatyPM-2000x500.jpg" class="img-fluid"> -->
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-image" style="background-image: url(//localhost:8080/wp-content/uploads/2017/12/auth.png)"></div>
+                    <!-- <img src="//localhost:8080/wp-content/uploads/2017/12/auth.png" class="img-fluid"> -->
+                </div>
             </div>
-            <div class="swiper-slide">
-                <img src="//localhost:8080/wp-content/uploads/2017/12/21551666_2018851195015302_873450756607415253_o.jpg"
-                    class="img-fluid">
-            </div>
-            <div class="swiper-slide">
-                <img src="//localhost:8080/wp-content/uploads/2017/12/Group-10.jpg" class="img-fluid">
-            </div>
-            <div class="swiper-slide">
-                <img src="//localhost:8080/wp-content/uploads/2017/12/16807810_1336351026410494_8343046197365125228_n.jpg"
-                    class="img-fluid">
-            </div>
-            <div class="swiper-slide">
-                <img src="//localhost:8080/wp-content/uploads/2017/12/bibikov.jpg" class="img-fluid">
-            </div>
-            <div class="swiper-slide">
-                <img src="//localhost:8080/wp-content/uploads/2017/12/KarpatyPM-2000x500.jpg" class="img-fluid">
-            </div>
-            <div class="swiper-slide">
-                <img src="//localhost:8080/wp-content/uploads/2017/12/auth.png" class="img-fluid">
-            </div>
+    
+            {% if parameters.scrollbar %}
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            {% endif %}
         </div>
-
-        {% if parameters.pagination %}
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-        {% endif %}
     
-        {% if parameters.scrollbar %}
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
-        {% endif %}
+        <div class="swiper-navigation">
+            {% if parameters.navigation %}
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            {% endif %}
+        </div>
     </div>
 
-    <div class="swiper-navigation">
-        {% if parameters.navigation %}
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        {% endif %}
-    </div>
+    {% if parameters.pagination %}
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+    {% endif %}
 
 </div>

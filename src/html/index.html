@@ -10,15 +10,21 @@
 
   {% include "partials/section.html" %}
 
-  {% set parameters = {
-    'loop': 1,
-    'slides': 4,
-    'space': 0,
-    'navigation': 1,
-    'pagination': 1,
-    'scrollbar': 1
-  } %}
-  {% include "partials/carousel.html" %}
+  <div class="fw-container-fluid">
+    <div class="fw-row">
+      <div class="col-md-12">
+        {% set parameters = {
+          'loop': 1,
+          'slides': 4,
+          'space': 0,
+          'navigation': 1,
+          'pagination': 1,
+          'scrollbar': 1
+        } %}
+        {% include "partials/carousel.html" %}
+      </div>
+    </div>
+  </div>
 
 
   <div class="fw-container">
