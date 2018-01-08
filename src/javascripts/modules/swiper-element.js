@@ -9,6 +9,7 @@ export default class SwiperElement {
             var autoplay = {};
             
             autoplay.delay = swiperContainer.dataset.delay * 1000;
+            autoplay.disableOnInteraction = false;
         } else {
             var autoplay = false;
         }

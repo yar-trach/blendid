@@ -1,0 +1,28 @@
+.contact-spot {
+    perspective: 900;
+
+    .flip {
+        transform-style: preserve-3d;
+        transition: transform .6s ease;
+
+        .card-img {
+            &-top,
+            &-overlay {
+                backface-visibility: hidden;
+            }
+            &-top {
+                z-index: 2;
+                transform: rotateY(0);
+            }
+            &-overlay {
+                transform: rotateY(180deg);
+            }
+        }
+    }
+
+    &:hover {
+        .flip {
+            transform: rotateY(180deg);
+        }
+    }
+}

@@ -1,0 +1,43 @@
+<div class="contact-spot card text-center border-0 my-3">
+    <div class="{{ "flip" if parameters.description }} position-relative">
+        {% if parameters.image %}
+            <img class="card-img-top" src="{{ parameters.image }}">
+        {% endif %}
+    
+        {% if parameters.description %}
+            <div class="card-img-overlay d-flex align-items-center border border-secondary">
+                <p class="font-weight-bold">{{ parameters.description }}</p>
+            </div>
+        {% endif %}
+    </div>
+
+    <div class="card-body">
+        {% if parameters.name %}
+            <h3 class="card-title">{{ parameters.name }}</h3>
+        {% endif %}
+
+        {% if parameters.position %}
+            <h5 class="font-italic text-primary">{{ parameters.position }}</h3>
+        {% endif %}
+
+        <div>
+            {% if parameters.link_facebook %}
+                <a class="d-inline-block p-3 text-secondary" href="{{ parameters.link_facebook }}">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+            {% endif %}
+    
+            {% if parameters.link_twitter %}
+                <a class="d-inline-block p-3 text-secondary" href="{{ parameters.link_twitter }}">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+            {% endif %}
+    
+            {% if parameters.link_gplus %}
+                <a class="d-inline-block p-3 text-secondary" href="{{ parameters.link_gplus }}">
+                    <i class="fa fa-google-plus" aria-hidden="true"></i>
+                </a>
+            {% endif %}
+        </div>
+    </div>
+</div>

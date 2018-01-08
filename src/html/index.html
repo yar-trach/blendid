@@ -45,6 +45,45 @@
     </div>
   </div>
 
+  <div class="fw-container">
+    <div class="fw-row">
+      <div class="col-md-4">
+        {% set parameters = {
+          'image': '//localhost:8080/wp-content/uploads/2018/01/Portrait_Placeholder.png',
+          'name': 'Person',
+          'position': 'CEO',
+          'link_facebook': '#fb',
+          'link_twitter': '#tw',
+          'link_gplus': '#gp'
+        } %}
+        {% include "partials/contact-spot.html" %}
+      </div>
+      <div class="col-md-4">
+        {% set parameters = {
+          'image': '//localhost:8080/wp-content/uploads/2018/01/Portrait_Placeholder.png',
+          'name': 'Person',
+          'description': 'Існує багато варіацій уривків з Lorem Ipsum, але більшість з них зазнала певних змін на кшталт жартівливих вставок або змішування слів, які навіть не виглядають правдоподібно. ',
+          'position': 'CEO',
+          'link_facebook': '#fb',
+          'link_twitter': '#tw',
+          'link_gplus': '#gp'
+        } %}
+        {% include "partials/contact-spot.html" %}
+      </div>
+      <div class="col-md-4">
+        {% set parameters = {
+          'image': '//localhost:8080/wp-content/uploads/2017/12/Group-10.jpg',
+          'name': 'Person',
+          'description': 'Існує багато варіацій уривків з Lorem Ipsum, але більшість з них зазнала певних змін на кшталт жартівливих вставок або змішування слів, які навіть не виглядають правдоподібно. ',
+          'position': 'CEO',
+          'link_facebook': '#fb',
+          'link_twitter': '#tw',
+          'link_gplus': '#gp'
+        } %}
+        {% include "partials/contact-spot.html" %}
+      </div>
+    </div>
+  </div>
 
   <!-- <h1 data-module="example">{{ message }}</h1> -->
   <br>
