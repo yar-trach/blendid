@@ -32,7 +32,6 @@ export default class MainNav {
         function getWindowSize() {
             docWidth = doc.clientWidth;
             // docHeight = doc.clientHeight;
-            console.log(docWidth);
 
             if (docWidth >= 992) {
                 allowToChangeMenu = true;
