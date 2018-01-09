@@ -1,25 +1,137 @@
 .ai1ec {
-    &-month-view {
-        .ai1ec-day {
-            .ai1ec-date {
-                text-align: center;
+    &-calendar {
+        .ai1ec-title-buttons {
+            .ai1ec-pagination {
+                .ai1ec-minical-trigger {
+                    border: none !important;
+                    color: #1d3c73 !important;
+                }
+                .ai1ec-prev-month,
+                .ai1ec-next-month {
+                    color: transparent !important;
 
-                .ai1ec-load-view {
-                    font-weight: 700 !important;
-                    color: #1d3c73;
+                    &:hover {
+                        color: transparent !important;
+                    }
+
+                    i {
+                        position: absolute;
+                        color: $primary;
+                        font-size: 2rem;
+                        top: 47%;
+                        left: 50%;
+                        transform: translate3D(-50%, -50%, 0);
+                    }
+                }
+
+                .ai1ec-prev-month {
+                    i {
+                        margin-left: -.125rem;
+                    }
+                }
+
+                .ai1ec-next-month {
+                    i {
+                        margin-left: .125rem;
+                    }
                 }
             }
         }
     }
+
+    &-calendar-view {
+        .ai1ec {
+            &-month-view {
+                .ai1ec-day {
+                    &-stretcher {
+                        height: 60px !important;
+                    }
+        
+                    .ai1ec-date {
+                        text-align: center;
+        
+                        .ai1ec-load-view {
+                            font-weight: 700 !important;
+                            color: #1d3c73;
+                        }
+                    }
+        
+                    .ai1ec-event {
+                        font-weight: 700;
+                        font-size: .75rem;
+        
+                        .fa-bookmark {
+                            position: relative;
+                            top: -0.25rem;
+                            font-size: .6rem;
+                        }
+                    }
+        
+                    .ai1ec-single {
+                        color: $white;
+        
+                        &:hover {
+                            color: $white;
+                        }
+                    }
+                }
+        
+                td.ai1ec-empty {
+                    background: $white !important;
+                }
+            }
+        }
+    }
+
+    &-popover {
+        border-radius: 0 !important;
+
+        .ai1ec-event {
+            &-time {
+                position: relative;
+                background-color: transparent !important;
+                color: $white;
+
+                .ai1ec-color-swatches {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    right: 0;
+                    z-index: -1;
+
+                    .ai1ec-color-swatch {
+                        top: 0;
+                        left: 0;
+                        height: 100%;
+                        width: 100%;
+                        border-radius: 0;
+                        margin: 0;
+                    }
+                }
+            }
+            &-avatar {
+                width: 100% !important;
+
+                img {
+                    min-height: auto;
+                }
+            }
+        }
+    }
+
+    &-filters {
+        .ai1ec-color-swatch {
+            height: 22px !important;
+            width: 22px !important;
+            opacity: 1;
+            top: 5px;
+            position: relative;
+            border-radius: 50%;
+        }
+    }
 }
-.ai1ec-month-view td.ai1ec-empty {
-    background: $white !important;
-}
-.ai1ec-filters .ai1ec-color-swatch {
-    height: 22px;
-    width: 22px;
-    opacity: 1;
-    top: 5px;
-    position: relative;
-    border-radius: 50%;
-}
+
+// .ai1ec-popover.ai1ec-popup {
+//     display: block !important;
+// }
