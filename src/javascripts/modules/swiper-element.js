@@ -23,16 +23,20 @@ export default class SwiperElement {
             
             // Responsive breakpoints
             breakpoints: {
-                // when window width is <= 375
-                375: {
+                // when window width is <= 667
+                667: {
                     slidesPerView: 1,
                 },
-                // when window width is <= 640
-                640: {
+                // when window width is <= 767
+                767: {
                     slidesPerView: 2,
                 },
-                // when window width is <= 1024
-                1024: {
+                // when window width is <= 1023
+                1023: {
+                    slidesPerView: 3,
+                },
+                // when window width is <= 1199
+                1199: {
                     slidesPerView: slidesNum(Number(swiperContainer.dataset.slides) - 1),
                 }
             },
