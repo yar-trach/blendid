@@ -83,7 +83,26 @@
 .fw-col-sm-12 {
     @extend .col-sm-12;
 }
-.fw-col-sm-15 {
+
+.fw-col-md-3 {
+    @extend .col-md-3;
+}
+.fw-col-md-4 {
+    @extend .col-md-4;
+}
+.fw-col-md-6 {
+    @extend .col-md-6;
+}
+.fw-col-md-8 {
+    @extend .col-md-8;
+}
+.fw-col-md-9 {
+    @extend .col-md-9;
+}
+.fw-col-md-12 {
+    @extend .col-md-12;
+}
+.fw-col-md-15 {
     @extend .col;
     @include make-col(1, 5);
 }
