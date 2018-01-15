@@ -1,6 +1,18 @@
 .blog-spot {
     &.card {
-        min-width: 15rem;
+
+        @include media-breakpoint-only(sm) {
+            flex-basis: calc(100% - 30px);
+        }
+
+        @include media-breakpoint-only(md) {
+            flex-basis: calc(50% - 30px);
+        }
+
+        @include media-breakpoint-up(lg) {
+            flex-basis: calc(33.3333% - 30px);
+            max-width: calc(50% - 30px);
+        }
 
         .blog-author {
             color: #898989;
