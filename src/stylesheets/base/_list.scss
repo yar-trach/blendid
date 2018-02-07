@@ -20,21 +20,27 @@
 
     overflow-x: hidden;
 
-    & > li:nth-child(n+#{$min-length}),
+    &._long > li:nth-child(n+#{$min-length}),
     &__helper {
         display: none;
     }
 
-    &__helper + & {
-        & + .fa {
+    &__helper + &._long {
+        &:after {
+            content: '\f103';
+            font-family: FontAwesome;
             position: relative;
-            transform: rotate(0);
+            display: inline-block;
+            transform: rotate(0) translate3d(-50%, 0, 0);
             will-change: transform;
             transition: transform .35s ease;
+            left: 50%;
+            font-size: 1.5rem;
+            color: $primary;
         }
     }
 
-    &__helper:checked + & {
+    &__helper:checked + &._long {
 
         & > li:nth-child(n+#{$min-length}) {
             display: list-item;
@@ -53,8 +59,8 @@
             animation-delay: #{$min-length+$max-length} * $anim-delay;
         }
 
-        & + .fa {
-            transform: rotate(180deg);
+        &:after {
+            transform: rotate(180deg) translate3d(-50%, 0, 0);
         }
     }
 }

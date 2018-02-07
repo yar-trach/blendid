@@ -21,3 +21,7 @@ h1, .h1 {
         font-size: 2.5rem;
     }
 }
+
+.fw-heading-center {
+    @extend .text-center;
+}
