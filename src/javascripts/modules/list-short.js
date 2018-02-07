@@ -1,4 +1,4 @@
-export default class ShortList {
+export default class ListShort {
     constructor(el) {
         this.el = el
 
